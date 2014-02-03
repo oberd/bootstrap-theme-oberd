@@ -5,7 +5,7 @@ module.exports = (grunt) ->
       compile:
         options:
           compress: false
-          paths: ['less', 'tmp', '<%= bowerDirectory %>/bootstrap/less', '<%= bowerDirectory %>/font-awesome/less']
+          paths: ['less', 'tmp', '<%= bowerDirectory %>']
         files:
           'dist/css/bootstrap.css': ['less/theme.less']
     watch:
