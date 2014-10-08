@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-theme-oberd",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "main": "dist/bootstrap.css",
   "ignore": [
     "**/.*",
@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "bootstrap": "3.2.x",
-    "font-awesome": "~4.1.0",
+    "font-awesome": "4.x.x",
     "jquery": "1.11.x"
   }
 }
