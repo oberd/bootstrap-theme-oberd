@@ -65,7 +65,7 @@
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
 @line-height-base:        1.428571429; // 20/14
-@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+@line-height-computed:    (@font-size-base * @line-height-base); // ~20px
 
 @headings-font-family:    @font-family-base;
 @headings-font-weight:    500;
@@ -163,8 +163,8 @@
 @input-color-placeholder:        @gray-light;
 
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
-@input-height-large:             (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
-@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+@input-height-large:             ((@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+@input-height-small:             ((@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
 @legend-color:                   @gray-dark;
 @legend-border-color:            #e5e5e5;
@@ -258,7 +258,7 @@
 @navbar-default-bg:                #f8f8f8;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 @navbar-border-radius:             @border-radius-base;
-@navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
+@navbar-padding-horizontal:        (@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 // Navbar links
